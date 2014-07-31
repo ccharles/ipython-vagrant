@@ -9,6 +9,7 @@ apt-get install -y python-pip
 apt-get install -y ipython
 apt-get install -y ipython-notebook
 apt-get install -y python-jinja2
+apt-get install -y python-matplotlib
 apt-get install -y python-numpy
 apt-get install -y python-pandas
 apt-get install -y python-scipy
