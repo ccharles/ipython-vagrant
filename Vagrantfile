@@ -15,6 +15,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # localhost.
   config.vm.network :forwarded_port, guest: 8888, host: 8888
 
+  # Mount notebook directories to home directory
+  config.vm.synced_folder "sample_notebooks/", "/home/vagrant/sample_notebooks"
+
   # Provision the server with a shell script.
   config.vm.provision :shell, :path => "vagrant_bootstrap.sh"
 end
